@@ -25,7 +25,11 @@ export default {
 @use "../assets/styles/partials/variables" as *;
 
 header {
-  padding: 20px 0;
+  margin-top: 1em;
   background-color: $color_white;
+
+  img {
+    padding: 0.5em 0 1.5em 0;
+  }
 }
 </style>

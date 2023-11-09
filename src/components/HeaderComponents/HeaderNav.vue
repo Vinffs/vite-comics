@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ul class="d-flex list-unstyled">
+    <ul class="d-flex list-unstyled m-0">
       <li :class="{ activePage: obj.active }" v-for="obj in navList">
         <a href="#">{{ obj.text }}</a>
       </li>
@@ -74,7 +74,7 @@ export default {
 @use "../../assets/styles/partials/variables" as *;
 
 li {
-  padding: 20px 15px;
+  padding: 4em 0.8em;
   font-size: 0.9em;
   font-weight: bold;
 
