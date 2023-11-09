@@ -1,15 +1,22 @@
 <template>
-  <div>
-    QUESTO E' IL MAIN
-  </div>
+  <main>
+    <TopMain />
+    <BottomMain />
+  </main>
 </template>
 
 <script>
-  export default {
-    name: 'AppMain',
-  }
+import TopMain from "./MainComponents/TopMain.vue";
+import BottomMain from "./MainComponents/BottomMain.vue";
+export default {
+  name: "AppMain",
+  components: {
+    TopMain,
+    BottomMain,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-
+@use "./../assets/styles/partials/_variables.scss" as *;
 </style>
