@@ -1,10 +1,7 @@
 <template>
   <section>
-    <div class="d-flex container justify-content-between" id="sectionContainer">
-      <div
-        v-for="section in sections"
-        class="d-flex align-content-center align-items-center"
-      >
+    <div class="d-flex justify-content-between container" id="sectionContainer">
+      <div v-for="section in sections" class="d-flex align-content-center align-items-center">
         <img :src="section.image" :alt="section.name" />
         <div class="sectionText">{{ section.name }}</div>
       </div>
@@ -55,11 +52,17 @@ section {
     width: 70px;
   }
 }
+
 .sectionText {
   color: $color_white;
   padding-left: 0.5em;
 }
-#sectionContainer > div:nth-child(4) img {
-  width: 50px;
+
+#sectionContainer {
+  max-width: 1200px;
+
+  &>div:nth-child(4) img {
+    width: 50px;
+  }
 }
 </style>
