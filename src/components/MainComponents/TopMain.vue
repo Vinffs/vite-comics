@@ -1,14 +1,26 @@
 <template>
-  <section>
-    <div class="container">
-      <h3>--&gt;Your Content Goes Here &lt;--</h3>
+  <section class="d-flex justify-content-center">
+    <div class="row container justify-content-center">
+      <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2" v-for="(comic, index) in comics" :key="index">
+        <card :thumb="comic.thumb" :series="comic.series" />
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import { dcComics } from "../../data/data.js";
+import card from "./card.vue";
 export default {
   name: "TopMain",
+  components: {
+    card,
+  },
+  data() {
+    return {
+      comics: dcComics,
+    }
+  }
 };
 </script>
 
