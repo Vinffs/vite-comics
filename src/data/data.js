@@ -83,4 +83,111 @@ const dcComics = [
   },
 ];
 
-export { dcComics };
+const navList = [
+  {
+    sectionTitle: "CHARACTERS",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "COMICS",
+    url: "#",
+    active: true,
+  },
+  {
+    sectionTitle: "MOVIES",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "TV",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "GAMES",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "COLLECTIBLES",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "VIDEOS",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "FANS",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "NEWS",
+    url: "#",
+    active: false,
+  },
+  {
+    sectionTitle: "SHOP",
+    url: "#",
+    active: false,
+  },
+];
+
+const sections = [
+  {
+    comicName: "DIGITAL COMICS",
+    comicImage: "/images/buy-comics-digital-comics.png",
+  },
+  {
+    comicName: "DC MERCHANDISE",
+    comicImage: "/images/buy-comics-merchandise.png",
+  },
+  {
+    comicName: "SUBSCRIPTION",
+    comicImage: "/images/buy-comics-subscriptions.png",
+  },
+  {
+    comicName: "COMIC SHOP LOCATOR",
+    comicImage: "/images/buy-comics-shop-locator.png",
+  },
+  {
+    comicName: "DC POWER VISA",
+    comicImage: "/images/buy-dc-power-visa.svg",
+  },
+];
+
+const footerList = [
+  {
+    name: "DC COMICS",
+    list: ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
+  },
+  {
+    name: "SHOP",
+    list: ["Shop DC", "Shop DC Collectibles"],
+  },
+  {
+    name: "DC",
+    list: [
+      "Terms of Service",
+      "Privacy Policy (New)",
+      "Ad Choices",
+      "Advertising",
+      "Jobs",
+      "Subscriptions",
+      "Talent Workshops",
+      "CPSC Certificates",
+      "Ratings",
+      "Shop Help",
+      "Contact Us",
+    ],
+  },
+  {
+    name: "SITES",
+    list: ["DC", "MAD Magazine", "DC Kids", "DC Universe", "DC Power Visa"],
+  },
+];
+
+export { dcComics, navList, sections, footerList };

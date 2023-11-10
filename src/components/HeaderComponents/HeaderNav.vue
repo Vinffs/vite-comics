@@ -2,69 +2,23 @@
   <nav>
     <ul class="d-flex list-unstyled m-0">
       <li :class="{ activePage: obj.active }" v-for="obj in navList">
-        <a href="#">{{ obj.text }}</a>
+        <a href="#">{{ obj.sectionTitle }}</a>
       </li>
     </ul>
   </nav>
 </template>
 
 <script>
+import { navList } from "../../data/data.js";
 export default {
   name: "HeaderNav",
+  components: {
+    sectionTitle: String,
+    active: Boolean,
+  },
   data() {
     return {
-      navList: [
-        {
-          text: "CHARACTERS",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "COMICS",
-          url: "#",
-          active: true,
-        },
-        {
-          text: "MOVIES",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "TV",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "GAMES",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "COLLECTIBLES",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "VIDEOS",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "FANS",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "NEWS",
-          url: "#",
-          active: false,
-        },
-        {
-          text: "SHOP",
-          url: "#",
-          active: false,
-        },
-      ],
+      navList: navList,
     };
   },
 };

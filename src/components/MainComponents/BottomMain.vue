@@ -2,40 +2,24 @@
   <section>
     <div class="d-flex justify-content-between container" id="sectionContainer">
       <div v-for="section in sections" class="d-flex align-content-center align-items-center">
-        <img :src="section.image" :alt="section.name" />
-        <div class="sectionText">{{ section.name }}</div>
+        <img :src="section.comicImage" :alt="section.comicName" />
+        <div class="sectionText">{{ section.comicName }}</div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import { sections } from "../../data/data.js";
 export default {
   name: "BottomMain",
+  components: {
+    comicName: String,
+    comicImage: String,
+  },
   data() {
     return {
-      sections: [
-        {
-          name: "DIGITAL COMICS",
-          image: "/images/buy-comics-digital-comics.png",
-        },
-        {
-          name: "DC MERCHANDISE",
-          image: "/images/buy-comics-merchandise.png",
-        },
-        {
-          name: "SUBSCRIPTION",
-          image: "/images/buy-comics-subscriptions.png",
-        },
-        {
-          name: "COMIC SHOP LOCATOR",
-          image: "/images/buy-comics-shop-locator.png",
-        },
-        {
-          name: "DC POWER VISA",
-          image: "/images/buy-dc-power-visa.svg",
-        },
-      ],
+      sections: sections,
     };
   },
 };

@@ -41,6 +41,7 @@ export default {
     margin: 0;
     font-size: 1em;
     text-wrap: balance;
+    word-wrap: normal;
   }
 }
 </style>

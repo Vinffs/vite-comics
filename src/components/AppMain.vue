@@ -29,7 +29,7 @@ main {
     color: $color_white;
     position: absolute;
     top: -30px;
-    left: 24%;
+    left: 25px;
     padding: 0.5em 1.5em;
     font-size: 1.5em;
     font-weight: bold;
