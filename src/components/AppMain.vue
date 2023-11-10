@@ -1,5 +1,6 @@
 <template>
   <main>
+    <button class="border-0">CURRENT SERIES</button>
     <TopMain />
     <BottomMain />
   </main>
@@ -19,4 +20,20 @@ export default {
 
 <style lang="scss" scoped>
 @use "./../assets/styles/partials/_variables.scss" as *;
+
+main {
+  position: relative;
+
+  button:first-child {
+    background-color: $color_primary;
+    color: $color_white;
+    position: absolute;
+    top: -30px;
+    left: 24%;
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+}
 </style>

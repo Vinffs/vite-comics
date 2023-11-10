@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
+  <div class="card py-3 border-0">
     <div>
-      <img :src="thumb" class="card-img-top" :alt="series">
+      <img :src="thumb" class="card-img-top rounded-0" :alt="series">
     </div>
     <div class=" card-body d-flex p-0">
       <h5>{{ series }}</h5>

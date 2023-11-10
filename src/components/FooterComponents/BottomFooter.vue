@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container d-flex justify-content-between py-5">
+    <div class="container d-flex justify-content-between align-items-center py-5">
       <div>
         <button>SIGN-UP NOW!</button>
       </div>
@@ -45,9 +45,13 @@ section {
   }
 }
 
-ul>li:first-child {
-  color: $color_primary;
-  font-size: 1.5em;
-  font-weight: bold;
+ul {
+  margin: 0 !important;
+
+  &>li:first-child {
+    color: $color_primary;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
 }
 </style>

@@ -4,6 +4,7 @@
       <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-2" v-for="(comic, index) in comics" :key="index">
         <card :thumb="comic.thumb" :series="comic.series" />
       </div>
+      <button>LOAD MORE</button>
     </div>
   </section>
 </template>
@@ -29,7 +30,18 @@ export default {
 
 section {
   background-color: $color_black;
-  padding: 3em 0;
+  padding: 2.5em 0;
+
+  button {
+    width: 15% !important;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: $color_white;
+    background-color: $color_primary;
+    border: none;
+    margin-top: 1em;
+  }
 }
 
 h3 {
